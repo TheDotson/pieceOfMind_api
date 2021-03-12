@@ -1,0 +1,22 @@
+[
+  {
+    "model": "pieceOfMind_api.pieceUser",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "name": "Michael Dotson",
+      "photo": "",
+      "bio": "This is my bio"
+    }
+  },
+  {
+    "model": "pieceOfMind_api.pieceUser",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "name": "Jeff Bridges",
+      "photo": "",
+      "bio": "This Dude abides"
+    }
+  }
+]
