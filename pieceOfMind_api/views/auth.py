@@ -53,6 +53,7 @@ def register_user(request):
 
     pieceUser = PieceUser.objects.create(
       user = new_user,
+      name = req_body['name'],
       photo = req_body['photo'],
       bio = reg_body['bio']
     )
