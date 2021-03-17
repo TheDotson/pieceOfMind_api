@@ -4,7 +4,8 @@
     "pk": 1,
     "fields": {
       "name": "My House",
-      "user_id": 1
+      "user_id": 1,
+      "items": [1, 2, 3, 4, 5, 6]
     }
   },
   {
@@ -12,7 +13,8 @@
     "pk": 2,
     "fields": {
       "name": "My Winter Cabin",
-      "user_id": 1
+      "user_id": 1,
+      "items": [3, 4, 5]
     }
   },
   {
@@ -20,7 +22,8 @@
     "pk": 3,
     "fields": {
       "name": "My House",
-      "user_id": 2
+      "user_id": 2,
+      "items": [1, 6]
     }
   }
 ]

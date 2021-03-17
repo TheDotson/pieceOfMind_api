@@ -26,6 +26,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'pieceUsers', PieceUserViewSet, 'pieceUser')
 router.register(r'rooms', RoomViewSet, 'room')
 router.register(r'collections', CollectionViewSet, 'collection')
+router.register(r'items', ItemViewSet, 'item')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -3,7 +3,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 1,
     "fields": {
-      "collection_id": 1,
       "name": "Sony Playstation 5 (Digital Edition)",
       "location": 2,
       "image": "",
@@ -14,7 +13,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 2,
     "fields": {
-      "collection_id": 1,
       "name": "Sony - 55inch Class X900H Series LED 4K TV",
       "location": 2,
       "image": "",
@@ -25,7 +23,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 3,
     "fields": {
-      "collection_id": 1,
       "name": "Tuft & Needle King Size Mattress",
       "location": 1,
       "image": "",
@@ -36,7 +33,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 4,
     "fields": {
-      "collection_id": 1,
       "name": "Wood Dresser",
       "location": 1,
       "image": "",
@@ -47,7 +43,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 5,
     "fields": {
-      "collection_id": 1,
       "name": "Baceno 2-Piece Sectional",
       "location": 4,
       "image": "",
@@ -58,7 +53,6 @@
     "model": "pieceOfMind_api.item",
     "pk": 6,
     "fields": {
-      "collection_id": 1,
       "name": "Draycoll Recliner",
       "location": 4,
       "image": "",
