@@ -3,5 +3,6 @@ from django.contrib.auth.models import User
 from django.db.models.deletion import CASCADE
 
 class Collection(models.Model):
-     title = models.CharField(max_length=20)
-     user_id = models.ForeignKey("PieceUser", on_delete=CASCADE, related_name="pieceuser")
+     name = models.CharField(max_length=20)
+     user = models.ForeignKey("PieceUser", on_delete=CASCADE, related_name="pieceuser")
+     items = models.ManyToManyField("Item", related_name="collections", related_query_name='item')

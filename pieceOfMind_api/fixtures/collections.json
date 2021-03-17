@@ -3,24 +3,27 @@
     "model": "pieceOfMind_api.collection",
     "pk": 1,
     "fields": {
-      "title": "My House",
-      "user_id": 1
+      "name": "My House",
+      "user_id": 1,
+      "items": [1, 2, 3, 4, 5, 6]
     }
   },
   {
     "model": "pieceOfMind_api.collection",
     "pk": 2,
     "fields": {
-      "title": "My Winter Cabin",
-      "user_id": 1
+      "name": "My Winter Cabin",
+      "user_id": 1,
+      "items": [3, 4, 5]
     }
   },
   {
     "model": "pieceOfMind_api.collection",
     "pk": 3,
     "fields": {
-      "title": "My House",
-      "user_id": 2
+      "name": "My House",
+      "user_id": 2,
+      "items": [1, 6]
     }
   }
 ]

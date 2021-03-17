@@ -49,11 +49,11 @@ def register_user(request):
         password=req_body['password'],
         first_name=req_body['first_name'],
         last_name=req_body['last_name'],
+        is_staff=True
     )
 
     pieceUser = PieceUser.objects.create(
       user = new_user,
-      name = req_body['name'],
       photo = req_body['photo'],
       bio = reg_body['bio']
     )
