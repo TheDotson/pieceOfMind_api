@@ -55,7 +55,7 @@ def register_user(request):
     pieceUser = PieceUser.objects.create(
       user = new_user,
       photo = req_body['photo'],
-      bio = reg_body['bio']
+      bio = req_body['bio']
     )
 
     # Commit the user to the database by saving it
