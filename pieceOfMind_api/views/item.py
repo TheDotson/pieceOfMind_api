@@ -30,3 +30,10 @@ class ItemViewSet(viewsets.ModelViewSet):
       return Response(serializer.data)
     else:
       return Response(serializer.errors, status=HttpResponseBadRequest.status_code)
+
+  def get_queryset(self):
+    location = self.request.query_params.get('location', None)
+    if location:
+      return self.queryset.filter(location=location)
+    else:
+      return self.queryset
