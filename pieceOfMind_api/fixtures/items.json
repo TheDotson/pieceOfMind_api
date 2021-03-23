@@ -5,7 +5,7 @@
     "fields": {
       "name": "Sony Playstation 5 (Digital Edition)",
       "location": 2,
-      "image": "",
+      "image": "https://bit.ly/3cZdTdb",
       "price": 399.99
     }
   },
@@ -15,7 +15,7 @@
     "fields": {
       "name": "Sony - 55inch Class X900H Series LED 4K TV",
       "location": 2,
-      "image": "",
+      "image": "https://bit.ly/3c9wO5S",
       "price": 969.99
     }
   },
@@ -25,7 +25,7 @@
     "fields": {
       "name": "Tuft & Needle King Size Mattress",
       "location": 1,
-      "image": "",
+      "image": "https://bit.ly/3vNo1hU",
       "price": 625.50
     }
   },
@@ -35,7 +35,7 @@
     "fields": {
       "name": "Wood Dresser",
       "location": 1,
-      "image": "",
+      "image": "https://bit.ly/3cWgJzH",
       "price": 135.89
     }
   },
@@ -43,9 +43,9 @@
     "model": "pieceOfMind_api.item",
     "pk": 5,
     "fields": {
-      "name": "Baceno 2-Piece Sectional",
+      "name": "Baceno 4-Piece Sectional",
       "location": 4,
-      "image": "",
+      "image": "https://bit.ly/3cZRcWw",
       "price": 799.99
     }
   },
@@ -55,7 +55,7 @@
     "fields": {
       "name": "Draycoll Recliner",
       "location": 4,
-      "image": "",
+      "image": "https://bit.ly/3r6uxNa",
       "price": 499.99
     }
   }
