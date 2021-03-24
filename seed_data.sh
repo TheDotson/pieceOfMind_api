@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf pieceOfMind_api/migrations
+rm -R pics
 rm db.sqlite3
 python manage.py makemigrations pieceOfMind_api
 python manage.py migrate
