@@ -3,3 +3,4 @@ from .pieceUser import PieceUserViewSet
 from .room import RoomViewSet
 from .collection import CollectionViewSet
 from .item import ItemViewSet
+from .image import ImageViewSet

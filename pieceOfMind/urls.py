@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include
+from django.conf.urls.static import static
 from django.urls import path
 from django.conf import settings
 from rest_framework import routers
@@ -27,10 +28,11 @@ router.register(r'pieceUsers', PieceUserViewSet, 'pieceUser')
 router.register(r'rooms', RoomViewSet, 'room')
 router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'items', ItemViewSet, 'item')
+router.register(r'images', ImageViewSet, 'image')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('register', register_user),
     path('login', login_user),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
