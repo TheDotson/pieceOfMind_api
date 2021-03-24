@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
-from pieceOfMind_api.models import Item
+from pieceOfMind_api.models import Item, Collection, Room
 from pieceOfMind_api.serializers import *
 
 class ItemViewSet(viewsets.ModelViewSet):
@@ -15,9 +15,16 @@ class ItemViewSet(viewsets.ModelViewSet):
   serializer_class = ItemSerializer
 
   def create(self, request):
+    item = Item.objects.create(
+      name = request.data['name'],
+      price = request.data['price'],
+      location = Room.objects.get(pk = request.data['location']),
+      image = request.data['image'],
+    )
+    collection = Collection.objects.get(pk = request.data['collectionId'])
+    collection.items.add(item)
     serializer = ItemCreateSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
-      serializer.save()
       return Response(serializer.data)
     else:
       return Response(serializer.errors, status=HttpResponseBadRequest.status_code)
