@@ -6,6 +6,6 @@ from .room import Room
 
 class Item(models.Model):
      name = models.CharField(max_length=50)
-     location = models.ForeignKey(Room, on_delete=models.DO_NOTHING, related_name='room')
+     location = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='room')
      image = models.CharField(max_length=200)
      price = models.FloatField(validators=[MinValueValidator(0.00), MaxValueValidator(200000.00)],)
