@@ -12,18 +12,9 @@
     "model": "pieceOfMind_api.collection",
     "pk": 2,
     "fields": {
-      "name": "My Winter Cabin",
-      "user_id": 1,
-      "items": [3, 4, 5]
-    }
-  },
-  {
-    "model": "pieceOfMind_api.collection",
-    "pk": 3,
-    "fields": {
-      "name": "My House",
+      "name": "My Apartment",
       "user_id": 2,
-      "items": [1, 6]
+      "items": []
     }
   }
 ]

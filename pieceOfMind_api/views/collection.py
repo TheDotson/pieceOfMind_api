@@ -50,3 +50,10 @@ class CollectionViewSet(viewsets.ModelViewSet):
 
     except Exception as ex:
       return Response({"message": ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+  def get_queryset(self):
+    user = self.request.query_params.get('user', None)
+    if user:
+      return self.queryset.filter(user=user)
+    else:
+      return self.queryset

@@ -3,28 +3,32 @@
     "model": "pieceOfMind_api.room",
     "pk": 1,
     "fields": {
-      "name": "Bedroom"
+      "name": "Bedroom",
+      "user": 1
     }
   },
   {
     "model": "pieceOfMind_api.room",
     "pk": 2,
     "fields": {
-      "name": "Den"
+      "name": "Den",
+      "user": 1
     }
   },
   {
     "model": "pieceOfMind_api.room",
     "pk": 3,
     "fields": {
-      "name": "Garage"
+      "name": "Garage",
+      "user": 1
     }
   },
   {
     "model": "pieceOfMind_api.room",
     "pk": 4,
     "fields": {
-      "name": "Living Room"
+      "name": "Living Room",
+      "user": 1
     }
   }
 ]
